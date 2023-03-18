@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+
 import 'package:food_delivery_app/constans/colors.dart';
+import 'package:food_delivery_app/models/food.dart';
+
 import 'package:food_delivery_app/screens/detail/widget/food_detail.dart';
 import 'package:food_delivery_app/screens/detail/widget/food_detail_image.dart';
+import 'package:food_delivery_app/screens/detail/widget/food_quantity.dart';
 import 'package:food_delivery_app/widgets/custom_appbar.dart';
-
-import '../../models/food.dart';
 
 class DetailScreen extends StatelessWidget {
   final Food food;

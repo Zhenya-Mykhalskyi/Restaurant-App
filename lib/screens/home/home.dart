@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-import '../../constans/colors.dart';
-import '../../models/restaurant.dart';
+import 'package:food_delivery_app/constans/colors.dart';
+import 'package:food_delivery_app/models/restaurant.dart';
 
-import '../../screens/home/widget/food_list.dart';
-import '../../widgets/custom_appbar.dart';
-import '../../screens/home/widget/restaurant_info.dart';
+import 'package:food_delivery_app/screens/home/widget/food_list.dart';
+import 'package:food_delivery_app/widgets/custom_appbar.dart';
+import 'package:food_delivery_app/screens/home/widget/restaurant_info.dart';
 import 'widget/food_list_view.dart';
 
 class HomePageSreen extends StatefulWidget {
