@@ -22,7 +22,7 @@ class Restaurant {
 
   static Restaurant generateResraurant() {
     return Restaurant(
-      'Restaurant)',
+      'Restaurant',
       '20-30 min',
       '2.4 km',
       'Restaurant',
