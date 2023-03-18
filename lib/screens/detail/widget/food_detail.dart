@@ -81,6 +81,23 @@ class FoodDetail extends StatelessWidget {
               itemCount: food.ingredients.length,
             ),
           ),
+          SizedBox(height: 30),
+          Row(
+            children: [
+              Text(
+                'About',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+              ),
+            ],
+          ),
+          Text(
+            food.about,
+            style: TextStyle(
+              wordSpacing: 1.2,
+              height: 1.5,
+              fontSize: 16,
+            ),
+          ),
         ],
       ),
     );

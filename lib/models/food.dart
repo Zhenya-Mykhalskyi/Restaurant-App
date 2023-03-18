@@ -41,7 +41,7 @@ class Food {
           {'Egg': 'assets/images/ingre3.png'},
           {'Scallion': 'assets/images/ingre4.png'}
         ],
-        'Simply put, ramne is s Japanese noodle soup',
+        'Simply put, ramen is a Japanese noodle soup, with a combination of a rich flavoured broth, one of a variety of types of noodle and a selection of meats or vegetables, often topped with a boiled egg.',
         hightLight: true,
       ),
       Food(
@@ -59,7 +59,7 @@ class Food {
           {'Egg': 'assets/images/ingre3.png'},
           {'Scallion': 'assets/images/ingre4.png'}
         ],
-        'Simply put, ramne is s Japanese noodle soup',
+        'An iconic dish of Northern Thailand, "sai ua" is one of the most flavourful sausages I can think of. The pork is mixed with an aromatic curry paste, grilled, then served with sticky rice and fresh veggies. Yum!',
       ),
       Food(
         'assets/images/dish3.png',
@@ -76,7 +76,7 @@ class Food {
           {'Egg': 'assets/images/ingre3.png'},
           {'Scallion': 'assets/images/ingre4.png'}
         ],
-        'Simply put, ramne is s Japanese noodle soup',
+        'If you\'ve never had it before, ratatouille is a French Provençal dish that is made of stewed vegetables. The ingredients are very simple and you can customize it with your favorite veggies! This particular recipe uses eggplant, zucchini, and tomatoes as the main vegetables, with garlic and onions for flavoring.',
       ),
     ];
   }
@@ -98,7 +98,7 @@ class Food {
           {'Egg': 'assets/images/ingre3.png'},
           {'Scallion': 'assets/images/ingre4.png'}
         ],
-        'Simply put, ramne is s Japanese noodle soup',
+        'Chicken pieces coated with many fragrant spices like turmeric, cardamom and cloves, then simmered in a tomato sauce. This dish is a family favorite. I have also taken it to potlucks and served it to guests in my home. Everyone asks for the recipe. It is a great slow cooker meal, too.',
         hightLight: true,
       ),
       Food(
@@ -116,7 +116,7 @@ class Food {
           {'Egg': 'assets/images/ingre3.png'},
           {'Scallion': 'assets/images/ingre4.png'}
         ],
-        'Simply put, ramne is s Japanese noodle soup',
+        'Simply put, ramen is a Japanese noodle soup, with a combination of a rich flavoured broth, one of a variety of types of noodle and a selection of meats or vegetables, often topped with a boiled egg.',
         hightLight: true,
       ),
     ];
