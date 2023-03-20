@@ -1,11 +1,25 @@
 import 'package:flutter/material.dart';
+
 import 'package:food_delivery_app/constans/colors.dart';
+import 'package:food_delivery_app/providers/food.dart';
+import 'package:provider/provider.dart';
 
-import 'package:food_delivery_app/models/food.dart';
-
-class FoodQuantity extends StatelessWidget {
+class FoodQuantity extends StatefulWidget {
   final Food food;
+
   const FoodQuantity(this.food);
+
+  @override
+  State<FoodQuantity> createState() => _FoodQuantityState();
+}
+
+class _FoodQuantityState extends State<FoodQuantity> {
+  // void calculate() {
+  //   setState(() {
+  //     widget.food.quantity = 0;
+  //     widget.food.quantity++;
+  //   });
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +48,7 @@ class FoodQuantity extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    food.price.toString(),
+                    widget.food.price.toString(),
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                   )
                 ],
@@ -53,11 +67,24 @@ class FoodQuantity extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Text(
-                    '-',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
+                  Container(
+                    width: 30,
+                    child: Consumer<FoodsProvier>(
+                      builder: (_, foods, ch) => TextButton(
+                        onPressed: () {
+                          setState(() {
+                            foods.itemCount(2);
+                          });
+                        },
+                        child: Text(
+                          '-',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                   Container(
@@ -66,16 +93,31 @@ class FoodQuantity extends StatelessWidget {
                       shape: BoxShape.circle,
                       color: Colors.white,
                     ),
-                    child: Text(
-                      food.quantity.toString(),
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                    child: Consumer<FoodsProvier>(
+                      builder: (_, foods, ch) => Text(
+                        foods.count.toString(),
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                     ),
                   ),
-                  Text(
-                    '+',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
+                  Container(
+                    width: 30,
+                    child: Consumer<FoodsProvier>(
+                      builder: (_, foods, ch) => TextButton(
+                        onPressed: () {
+                          setState(() {
+                            foods.itemCount(1);
+                          });
+                        },
+                        child: Text(
+                          '+',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                 ],

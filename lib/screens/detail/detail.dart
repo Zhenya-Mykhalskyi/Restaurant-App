@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/providers/food.dart';
+import 'package:provider/provider.dart';
 
 import 'package:food_delivery_app/constans/colors.dart';
-import 'package:food_delivery_app/models/food.dart';
 
 import 'package:food_delivery_app/screens/detail/widget/food_detail.dart';
 import 'package:food_delivery_app/screens/detail/widget/food_detail_image.dart';
-import 'package:food_delivery_app/screens/detail/widget/food_quantity.dart';
 import 'package:food_delivery_app/widgets/custom_appbar.dart';
 
 class DetailScreen extends StatelessWidget {
   final Food food;
+
   const DetailScreen(this.food);
 
   @override
@@ -52,14 +53,21 @@ class DetailScreen extends StatelessWidget {
                   shape: BoxShape.circle,
                   color: Colors.white,
                 ),
-                child: Text(
-                  food.quantity.toString(),
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 19,
-                      fontWeight: FontWeight.bold),
+                child: Consumer<FoodsProvier>(
+                  builder: (_, foods, ch) => Text(
+                    // foods.itemCount.toString(),
+                    foods.count.toString(),
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold),
+                  ),
                 ),
               ),
+              // child: Icon(
+              //   Icons.arrow_forward_ios_sharp,
+              //   size: 16,
+              // ),
             ],
           ),
           onPressed: () {},

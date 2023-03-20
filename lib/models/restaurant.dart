@@ -1,4 +1,4 @@
-import 'food.dart';
+import '../providers/food.dart';
 
 class Restaurant {
   String name;
@@ -30,8 +30,8 @@ class Restaurant {
       'Some Description',
       4.7,
       {
-        'Recomended': Food.generateRecommendedFoods(),
-        'Popular': Food.generatePopularFoods(),
+        'Recomended': FoodsProvier.generateRecommendedFoods(),
+        'Popular': FoodsProvier.generatePopularFoods(),
         'Noodles': [],
         'Pizza': [],
       },

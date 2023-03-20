@@ -32,7 +32,8 @@ class FoodListView extends StatelessWidget {
                         Navigator.of(context).push(
                           MaterialPageRoute(
                             builder: (context) => DetailScreen(
-                                restaurant.menu[category[selected]]![index]),
+                              restaurant.menu[category[selected]]![index],
+                            ), //route to DetailScreen
                           ),
                         );
                       },

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/constans/colors.dart';
 
-import '../../../models/food.dart';
+import 'package:food_delivery_app/providers/food.dart';
 
 class FoodItem extends StatelessWidget {
   final Food food;
