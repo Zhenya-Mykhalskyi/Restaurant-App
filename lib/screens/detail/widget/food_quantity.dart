@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import 'package:food_delivery_app/constans/colors.dart';
 import 'package:food_delivery_app/providers/food.dart';
-import 'package:provider/provider.dart';
 
 class FoodQuantity extends StatefulWidget {
   final Food food;

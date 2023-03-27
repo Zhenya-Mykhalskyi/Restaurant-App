@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/constans/colors.dart';
-
 import 'package:food_delivery_app/providers/food.dart';
+
 import 'package:food_delivery_app/screens/detail/widget/food_quantity.dart';
 
 class FoodDetail extends StatelessWidget {

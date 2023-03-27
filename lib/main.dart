@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:food_delivery_app/providers/food.dart';
 import 'package:provider/provider.dart';
 
-import '../screens/home/home.dart';
+import 'package:food_delivery_app/providers/food.dart';
+import 'package:food_delivery_app/screens/home/home_screen.dart';
 
 void main() {
   runApp(MyApp());

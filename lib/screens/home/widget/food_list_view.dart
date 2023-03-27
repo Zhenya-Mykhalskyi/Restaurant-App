@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:food_delivery_app/models/restaurant.dart';
-import 'package:food_delivery_app/screens/detail/detail.dart';
+
+import 'package:food_delivery_app/screens/detail/detail_screen.dart';
 import 'package:food_delivery_app/screens/home/widget/food_item.dart';
 
 class FoodListView extends StatelessWidget {
