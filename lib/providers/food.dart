@@ -4,6 +4,7 @@ enum Category {
   Recommended,
   Popular,
   Pastas,
+  Pizza,
 }
 
 class Food {
@@ -123,6 +124,25 @@ class FoodsProvider with ChangeNotifier {
           'Chicken pieces coated with many fragrant spices like turmeric, cardamom and cloves, then simmered in a tomato sauce. This dish is a family favorite. I have also taken it to potlucks and served it to guests in my home. Everyone asks for the recipe. It is a great slow cooker meal, too.',
       hightLight: true,
     ),
+    Food(
+      id: 'm5',
+      categories: [Category.Recommended, Category.Pizza],
+      imageUrl: 'assets/images/dish5.png',
+      description: 'Yammi',
+      name: 'Calzone Pizza',
+      waitTime: '50 min',
+      score: 4.9,
+      cal: '325 kcal',
+      price: 14,
+      ingredients: [
+        {'Noodle': 'assets/images/ingre1.png'},
+        {'Shrimp': 'assets/images/ingre2.png'},
+        {'Egg': 'assets/images/ingre3.png'},
+        {'Scallion': 'assets/images/ingre4.png'}
+      ],
+      about:
+          'Chicken pieces coated with many fragrant spices like turmeric, cardamom and cloves, then simmered in a tomato sauce. This dish is a family favorite. I have also taken it to potlucks and served it to guests in my home. Everyone asks for the recipe. It is a great slow cooker meal, too.',
+    ),
   ];
 
   List<Food> get items {
@@ -160,6 +180,12 @@ class FoodsProvider with ChangeNotifier {
   static List<Food> get PastasFoods {
     return _items
         .where((element) => element.categories.contains(Category.Pastas))
+        .toList();
+  }
+
+  static List<Food> get PizzaFoods {
+    return _items
+        .where((element) => element.categories.contains(Category.Pizza))
         .toList();
   }
 }

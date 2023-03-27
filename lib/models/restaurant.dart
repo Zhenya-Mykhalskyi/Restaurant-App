@@ -33,7 +33,7 @@ class Restaurant {
         'Recomended': FoodsProvider.RecommendedFoods,
         'Popular': FoodsProvider.PopularFoods,
         'Pasta': FoodsProvider.PastasFoods,
-        'Pizza': [],
+        'Pizza': FoodsProvider.PizzaFoods,
       },
     );
   }
