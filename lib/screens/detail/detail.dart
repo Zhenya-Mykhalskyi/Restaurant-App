@@ -53,7 +53,7 @@ class DetailScreen extends StatelessWidget {
                   shape: BoxShape.circle,
                   color: Colors.white,
                 ),
-                child: Consumer<FoodsProvier>(
+                child: Consumer<FoodsProvider>(
                   builder: (_, foods, ch) => Text(
                     // foods.itemCount.toString(),
                     foods.count.toString(),

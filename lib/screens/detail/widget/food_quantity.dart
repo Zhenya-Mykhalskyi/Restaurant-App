@@ -69,7 +69,7 @@ class _FoodQuantityState extends State<FoodQuantity> {
                 children: [
                   Container(
                     width: 30,
-                    child: Consumer<FoodsProvier>(
+                    child: Consumer<FoodsProvider>(
                       builder: (_, foods, ch) => TextButton(
                         onPressed: () {
                           setState(() {
@@ -93,7 +93,7 @@ class _FoodQuantityState extends State<FoodQuantity> {
                       shape: BoxShape.circle,
                       color: Colors.white,
                     ),
-                    child: Consumer<FoodsProvier>(
+                    child: Consumer<FoodsProvider>(
                       builder: (_, foods, ch) => Text(
                         foods.count.toString(),
                         style: TextStyle(fontWeight: FontWeight.bold),
@@ -102,7 +102,7 @@ class _FoodQuantityState extends State<FoodQuantity> {
                   ),
                   Container(
                     width: 30,
-                    child: Consumer<FoodsProvier>(
+                    child: Consumer<FoodsProvider>(
                       builder: (_, foods, ch) => TextButton(
                         onPressed: () {
                           setState(() {

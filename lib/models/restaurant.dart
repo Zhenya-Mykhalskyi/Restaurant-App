@@ -30,9 +30,9 @@ class Restaurant {
       'Some Description',
       4.7,
       {
-        'Recomended': FoodsProvier.generateRecommendedFoods(),
-        'Popular': FoodsProvier.generatePopularFoods(),
-        'Noodles': [],
+        'Recomended': FoodsProvider.RecommendedFoods,
+        'Popular': FoodsProvider.PopularFoods,
+        'Pasta': FoodsProvider.PastasFoods,
         'Pizza': [],
       },
     );

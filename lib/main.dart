@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (ctx) => FoodsProvier()),
+        ChangeNotifierProvider(create: (ctx) => FoodsProvider()),
       ],
 
       // SystemChrome.setSystemUIOverlayStyle(
